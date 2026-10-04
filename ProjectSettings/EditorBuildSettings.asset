@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/TelaInicial.unity
+    guid: 80e7d6cc965c18b4baa2515c62d98dd2
+  - enabled: 1
+    path: Assets/Scenes/Fase1.unity
+    guid: 5d1ad80a8e13fbd46ad3f1e3c9eedbd1
+  - enabled: 1
+    path: Assets/Scenes/Fase3.unity
+    guid: ac30d4468f0b97d409f01ffb66e994e5
+  - enabled: 1
+    path: Assets/Scenes/Fase4.unity
+    guid: 5ef467cec141d5d4c85c5c122d82154e
+  - enabled: 1
+    path: Assets/Scenes/menuTelaInicial.unity
+    guid: 9d66d368a49402046adc4bb93b479868
+  - enabled: 1
+    path: Assets/Scenes/menu.unity
+    guid: 8c9cfa26abfee488c85f1582747f6a02
+  - enabled: 1
+    path: Assets/Scenes/GameOver.unity
+    guid: cf2408eae826ed445a54dcbe2ecb1454
+  - enabled: 1
+    path: Assets/Scenes/TelaVitoria.unity
+    guid: 23e64b9a63296874caca8bddfcf1b791
+  m_configObjects:
+    com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}

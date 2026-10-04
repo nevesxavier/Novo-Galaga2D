@@ -1,0 +1,470 @@
+fileFormatVersion: 2
+guid: 135a1395fcc1b954c8053d1f8363cac4
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 97055544651540425
+    second: Galaga2DSemRastro_0
+  - first:
+      213: 7980787794452487446
+    second: Galaga2DSemRastro_1
+  - first:
+      213: -7693460847711179658
+    second: Galaga2DSemRastro_2
+  - first:
+      213: 3627050630811919650
+    second: Galaga2DSemRastro_3
+  - first:
+      213: -8401751996965199214
+    second: Galaga2DSemRastro_4
+  - first:
+      213: -9181301631845236477
+    second: Galaga2DSemRastro_5
+  - first:
+      213: -6468109549755410144
+    second: Galaga2DSemRastro_6
+  - first:
+      213: -7138756997006237057
+    second: Galaga2DSemRastro_7
+  - first:
+      213: -8806280465920109599
+    second: Galaga2DSemRastro_8
+  - first:
+      213: 7370874602084459042
+    second: Galaga2DSemRastro_9
+  - first:
+      213: -6759057800171321323
+    second: Galaga2DSemRastro_10
+  - first:
+      213: 6887455190694463003
+    second: Galaga2DSemRastro_11
+  - first:
+      213: 4224151806434697740
+    second: Galaga2DSemRastro_12
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Galaga2DSemRastro_0
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 39
+        width: 2080
+        height: 567
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c7ef6ee08fc85100800000000000000
+      internalID: 97055544651540425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Galaga2DSemRastro_1
+      rect:
+        serializedVersion: 2
+        x: 883
+        y: 600
+        width: 29
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61d1d1c073471ce60800000000000000
+      internalID: 7980787794452487446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Galaga2DSemRastro_2
+      rect:
+        serializedVersion: 2
+        x: 923
+        y: 580
+        width: 31
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67cacc6ee165b3590800000000000000
+      internalID: -7693460847711179658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Galaga2DSemRastro_3
+      rect:
+        serializedVersion: 2
+        x: 1136
+        y: 584
+        width: 46
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 225a6efe45fd55230800000000000000
+      internalID: 3627050630811919650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Galaga2DSemRastro_4
+      rect:
+        serializedVersion: 2
+        x: 1180
+        y: 586
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 292e5f9b21bf66b80800000000000000
+      internalID: -8401751996965199214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Galaga2DSemRastro_5
+      rect:
+        serializedVersion: 2
+        x: 1349
+        y: 602
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 301862a7fc6759080800000000000000
+      internalID: -9181301631845236477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Galaga2DSemRastro_6
+      rect:
+        serializedVersion: 2
+        x: 1376
+        y: 596
+        width: 49
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 029548e42a8ac36a0800000000000000
+      internalID: -6468109549755410144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Galaga2DSemRastro_7
+      rect:
+        serializedVersion: 2
+        x: 913
+        y: 582
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f72eb9f755a0eec90800000000000000
+      internalID: -7138756997006237057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Galaga2DSemRastro_8
+      rect:
+        serializedVersion: 2
+        x: 1939
+        y: 579
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e3de5ce29ec9c580800000000000000
+      internalID: -8806280465920109599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Galaga2DSemRastro_9
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 562
+        width: 9
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2226135e56b9a4660800000000000000
+      internalID: 7370874602084459042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Galaga2DSemRastro_10
+      rect:
+        serializedVersion: 2
+        x: 1781
+        y: 568
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5188474edb00332a0800000000000000
+      internalID: -6759057800171321323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Galaga2DSemRastro_11
+      rect:
+        serializedVersion: 2
+        x: 1794
+        y: 572
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1683cf2108259f50800000000000000
+      internalID: 6887455190694463003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Galaga2DSemRastro_12
+      rect:
+        serializedVersion: 2
+        x: 1785
+        y: 565
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c026ddbffa33f9a30800000000000000
+      internalID: 4224151806434697740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Galaga2DSemRastro_0: 97055544651540425
+      Galaga2DSemRastro_1: 7980787794452487446
+      Galaga2DSemRastro_10: -6759057800171321323
+      Galaga2DSemRastro_11: 6887455190694463003
+      Galaga2DSemRastro_12: 4224151806434697740
+      Galaga2DSemRastro_2: -7693460847711179658
+      Galaga2DSemRastro_3: 3627050630811919650
+      Galaga2DSemRastro_4: -8401751996965199214
+      Galaga2DSemRastro_5: -9181301631845236477
+      Galaga2DSemRastro_6: -6468109549755410144
+      Galaga2DSemRastro_7: -7138756997006237057
+      Galaga2DSemRastro_8: -8806280465920109599
+      Galaga2DSemRastro_9: 7370874602084459042
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
