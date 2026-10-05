@@ -12,6 +12,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Fase1.unity
     guid: 5d1ad80a8e13fbd46ad3f1e3c9eedbd1
   - enabled: 1
+    path: Assets/Scenes/Fase2.unity
+    guid: b02f0f62598f75844937ba5ef7ca6288
+  - enabled: 1
     path: Assets/Scenes/Fase3.unity
     guid: ac30d4468f0b97d409f01ffb66e994e5
   - enabled: 1
@@ -29,5 +32,14 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/TelaVitoria.unity
     guid: 23e64b9a63296874caca8bddfcf1b791
+  - enabled: 1
+    path: Assets/Scenes/ProximaFase2.unity
+    guid: c870ffe856648eb498952f05d0176ad2
+  - enabled: 1
+    path: Assets/Scenes/ProximaFase3.unity
+    guid: 03cf1994094ab65409d70f6a398d582b
+  - enabled: 1
+    path: Assets/Scenes/ProximaFase4.unity
+    guid: 8481626932b698049b5b6b7aa68d86c9
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}

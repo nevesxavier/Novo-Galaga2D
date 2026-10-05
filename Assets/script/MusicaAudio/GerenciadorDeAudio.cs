@@ -20,21 +20,22 @@ public class GerenciadorDeAudio : MonoBehaviour
     public AudioClip somTiroJogador;
 
     private void Awake()
-{
-    if (Instancia == null)
     {
-        Instancia = this;
-        DontDestroyOnLoad(gameObject); // Impede que o som seja destruído ao mudar de cena
+        if (Instancia == null)
+        {
+            Instancia = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else if (Instancia != this)
+        {
+            Destroy(gameObject);
+        }
     }
-    else if (Instancia != this)
-    {
-        Destroy(gameObject); // Deleta cópias que nascem ao carregar novas cenas
-    }
-}
 
     public void TocarMusica(AudioClip clip)
     {
         if (clip == null || fonteMusica == null) return;
+
         if (fonteMusica.clip == clip && fonteMusica.isPlaying) return;
 
         fonteMusica.clip = clip;
@@ -43,9 +44,13 @@ public class GerenciadorDeAudio : MonoBehaviour
     }
 
     public void TocarMusicaTelaInicial() => TocarMusica(musicaTelaInicial);
+
     public void TocarMusicaFase() => TocarMusica(musicaFaseNormal);
+
     public void TocarMusicaBoss() => TocarMusica(musicaBoss);
+
     public void TocarMusicaGameOver() => TocarMusica(musicaGameOver);
+
     public void TocarMusicaVitoria() => TocarMusica(musicaVitoria);
 
     public void TocarSFX(AudioClip clip)
@@ -57,5 +62,6 @@ public class GerenciadorDeAudio : MonoBehaviour
     }
 
     public void TocarSomClique() => TocarSFX(somCliqueBotao);
+
     public void TocarSomTiro() => TocarSFX(somTiroJogador);
 }

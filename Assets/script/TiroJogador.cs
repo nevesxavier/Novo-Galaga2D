@@ -2,63 +2,215 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 
 /// <summary>
-/// Controla o tiro da nave do jogador.
-/// Atira um projétil em CADA ponto de tiro da lista (1 ponto = tiro simples, 2 pontos = tiro duplo).
-/// Segurar o botão de tiro dispara continuamente, respeitando o intervalo (cooldown).
-/// Usa o novo Input System (pacote com.unity.inputsystem).
+/// Controla os dois disparos da nave.
+///
+/// Ao apertar Espaço, a nave dispara
+/// pelos dois pontos de disparo ao mesmo tempo.
+///
+/// A velocidade dos tiros pode ser aumentada
+/// temporariamente através do Power Up.
 /// </summary>
 public class TiroJogador : MonoBehaviour
 {
-    [Header("Tiro")]
-    [SerializeField] private GameObject projetilPrefab;
-    [Tooltip("Pontos de onde os tiros saem. Coloque 2 objetos aqui para tiro duplo.")]
-    [SerializeField] private Transform[] pontosDeTiro;
-    [Tooltip("Tempo mínimo entre um tiro e outro, em segundos.")]
-    [SerializeField] private float intervaloEntreTiros = 0.25f;
+    // ============================================================
+    // TIRO
+    // ============================================================
 
-    private float proximoTiro;
+    [Header("TIRO")]
+
+    [Tooltip("Prefab do tiro.")]
+    [SerializeField]
+    private GameObject tiroPrefab;
+
+    [Tooltip("Primeiro ponto de disparo da nave.")]
+    [SerializeField]
+    private Transform pontoDeDisparo1;
+
+    [Tooltip("Segundo ponto de disparo da nave.")]
+    [SerializeField]
+    private Transform pontoDeDisparo2;
+
+    [Tooltip("Velocidade normal do tiro.")]
+    [SerializeField]
+    private float velocidadeDoTiro = 15f;
+
+    [Tooltip("Tempo de vida do tiro.")]
+    [SerializeField]
+    private float tempoDeVidaDoTiro = 5f;
+
+
+    // ============================================================
+    // CONTROLE
+    // ============================================================
+
+    [Header("CONTROLE")]
+
+    [Tooltip("Tecla usada para disparar.")]
+    [SerializeField]
+    private Key teclaDeTiro = Key.Space;
+
+
+    // ============================================================
+    // REFERÊNCIA
+    // ============================================================
+
+    private ControleJogador controleJogador;
+
+
+    // ============================================================
+    // AWAKE
+    // ============================================================
+
+    private void Awake()
+    {
+        // Procura o ControleJogador na nave.
+        controleJogador =
+            GetComponent<ControleJogador>();
+
+        if (controleJogador == null)
+        {
+            Debug.LogWarning(
+                "TiroJogador: a nave não possui ControleJogador."
+            );
+        }
+    }
+
+
+    // ============================================================
+    // UPDATE
+    // ============================================================
 
     private void Update()
     {
-        if (ApertouTiro() && Time.time >= proximoTiro)
+        if (Keyboard.current == null)
+        {
+            return;
+        }
+
+
+        // Dispara quando apertar Espaço.
+        if (
+            Keyboard.current[
+                teclaDeTiro
+            ].wasPressedThisFrame
+        )
         {
             Atirar();
         }
     }
 
-    // Espaço, botão esquerdo do mouse ou botão sul do controle (A / X)
-    private bool ApertouTiro()
-    {
-        Keyboard teclado = Keyboard.current;
-        if (teclado != null && teclado.spaceKey.isPressed) return true;
 
-        Mouse mouse = Mouse.current;
-        if (mouse != null && mouse.leftButton.isPressed) return true;
-
-        Gamepad controle = Gamepad.current;
-        if (controle != null && controle.buttonSouth.isPressed) return true;
-
-        return false;
-    }
+    // ============================================================
+    // ATIRAR
+    // ============================================================
 
     private void Atirar()
     {
-        proximoTiro = Time.time + intervaloEntreTiros;
-
-        if (pontosDeTiro == null || pontosDeTiro.Length == 0)
+        // Verifica se o prefab existe.
+        if (tiroPrefab == null)
         {
-            // Sem pontos configurados: atira do centro da nave
-            Instantiate(projetilPrefab, transform.position, Quaternion.identity);
+            Debug.LogWarning(
+                "TiroJogador: Tiro Prefab não foi configurado."
+            );
+
+            return;
+        }
+
+
+        // Verifica os dois pontos.
+        if (
+            pontoDeDisparo1 == null ||
+            pontoDeDisparo2 == null
+        )
+        {
+            Debug.LogWarning(
+                "TiroJogador: os dois pontos de disparo precisam ser configurados."
+            );
+
+            return;
+        }
+
+
+        // ========================================================
+        // CALCULA A VELOCIDADE
+        // ========================================================
+
+        float velocidadeFinal =
+            velocidadeDoTiro;
+
+
+        // Verifica se existe Power Up.
+        if (controleJogador != null)
+        {
+            velocidadeFinal =
+                velocidadeDoTiro *
+                controleJogador
+                    .MultiplicadorVelocidadeTiro;
+        }
+
+
+        // ========================================================
+        // PRIMEIRO TIRO
+        // ========================================================
+
+        CriarTiro(
+            pontoDeDisparo1,
+            velocidadeFinal
+        );
+
+
+        // ========================================================
+        // SEGUNDO TIRO
+        // ========================================================
+
+        CriarTiro(
+            pontoDeDisparo2,
+            velocidadeFinal
+        );
+    }
+
+
+    // ============================================================
+    // CRIAR UM TIRO
+    // ============================================================
+
+    private void CriarTiro(
+        Transform pontoDeDisparo,
+        float velocidade
+    )
+    {
+        // Cria o tiro no ponto indicado.
+        GameObject tiro =
+            Instantiate(
+                tiroPrefab,
+                pontoDeDisparo.position,
+                pontoDeDisparo.rotation
+            );
+
+
+        // Procura o componente Projetil.
+        Projetil projetil =
+            tiro.GetComponent<Projetil>();
+
+
+        if (projetil != null)
+        {
+            // Configura a velocidade.
+            projetil.Configurar(
+                velocidade
+            );
+
+
+            // Configura o tempo de vida.
+            projetil.ConfigurarTempoDeVida(
+                tempoDeVidaDoTiro
+            );
         }
         else
         {
-            foreach (Transform ponto in pontosDeTiro)
-            {
-                if (ponto == null) continue;
-                Instantiate(projetilPrefab, ponto.position, Quaternion.identity);
-            }
+            Debug.LogWarning(
+                "TiroJogador: o prefab do tiro não possui o componente Projetil."
+            );
         }
-
-        // GerenciadorAudio.Instancia?.TocarSomTiro();  // adicione quando criar o GerenciadorAudio
     }
 }
