@@ -167,12 +167,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.CanvasScaler
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
+  m_MatchWidthOrHeight: 0.5
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
@@ -1874,7 +1874,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0.53382623, w: 0.8455943}
   m_LocalPosition: {x: -6.16, y: 0.22, z: 0}
-  m_LocalScale: {x: 0.2, y: 0.2, z: 1}
+  m_LocalScale: {x: 0.15, y: 0.15, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1177804776}
@@ -2277,9 +2277,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1134957b501a0a64da7af4096aaa8e30, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Vida
-  vidaMaxima: 45
+  vidaMaxima: 120
   destruirAoMorrer: 1
-  tipoEfeitoPowerUp: 0
+  tipoEfeitoPowerUp: 1
   quantidadeRegenerada: 1
   "limiteMaximoDeCora\xE7\xF5es": 5
   AoMorrer:
@@ -2362,7 +2362,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LancadorPowerUp
   powerUpPrefab: {fileID: 2694336615074023646, guid: 5cbd427b454787c49b68e66e887829aa, type: 3}
-  quantidadeMaxima: 5
+  quantidadeMaxima: 15
   tempoParaPrimeiroLancamento: 2
   intervaloEntreLancamentos: 10
   deslocamentoX: 0
