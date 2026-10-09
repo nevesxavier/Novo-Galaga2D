@@ -1,3 +1,4 @@
+
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -13,12 +14,10 @@ public class GerenciadorDeMenus : MonoBehaviour
         Vitoria
     }
 
-
     [Header("CONFIGURAÇÃO DESTA CENA")]
 
     [Tooltip("Defina se esta cena é uma tela normal, Game Over ou Vitória.")]
     public TipoDeTela tipoDeTelaAtual = TipoDeTela.Padrão;
-
 
     [Header("CONFIGURAÇÕES DE NOME DAS CENAS")]
 
@@ -28,13 +27,10 @@ public class GerenciadorDeMenus : MonoBehaviour
     [Tooltip("Nome exato da cena do Menu Inicial.")]
     public string nomeMenuInicial = "MenuInicial";
 
-
     [Header("PAINEL DE UI")]
 
-    // Não é necessário para o menu que está em uma cena separada.
-    // Pode ficar vazio.
+    // Referência ao painel de pausa.
     public GameObject painelPause;
-
 
     // Guarda o nome da cena anterior.
     private static string nomeCenaAnterior = "";
@@ -42,16 +38,13 @@ public class GerenciadorDeMenus : MonoBehaviour
     // Guarda a última fase que o jogador estava jogando.
     private static string ultimaFaseJogada = "";
 
-
     private void Awake()
     {
         // Garante que o jogo esteja rodando normalmente.
         Time.timeScale = 1f;
 
-
         // Descobre o nome da cena atual.
         string cenaAtual = SceneManager.GetActiveScene().name;
-
 
         // Se for uma fase normal, guarda o nome dela.
         if (tipoDeTelaAtual == TipoDeTela.Padrão &&
@@ -61,27 +54,18 @@ public class GerenciadorDeMenus : MonoBehaviour
         }
     }
 
-
     // =========================================================
     // BOTÃO JOGAR NOVAMENTE
     // =========================================================
 
     public void JogarNovamente()
     {
-        // Garante que o tempo volte ao normal.
         Time.timeScale = 1f;
 
-
-        // Se estiver na tela de vitória,
-        // começa novamente pela primeira fase.
         if (tipoDeTelaAtual == TipoDeTela.Vitoria)
         {
             CarregarCenaComHistorico(nomePrimeiraFase);
         }
-
-
-        // Se estiver no Game Over,
-        // volta para a fase onde o jogador perdeu.
         else if (tipoDeTelaAtual == TipoDeTela.GameOver)
         {
             if (!string.IsNullOrEmpty(ultimaFaseJogada))
@@ -93,10 +77,6 @@ public class GerenciadorDeMenus : MonoBehaviour
                 CarregarCenaComHistorico(nomePrimeiraFase);
             }
         }
-
-
-        // Caso seja uma cena normal,
-        // simplesmente reinicia a cena atual.
         else
         {
             SceneManager.LoadScene(
@@ -104,7 +84,6 @@ public class GerenciadorDeMenus : MonoBehaviour
             );
         }
     }
-
 
     // =========================================================
     // BOTÃO JOGAR - MENU INICIAL
@@ -115,7 +94,6 @@ public class GerenciadorDeMenus : MonoBehaviour
         CarregarCenaComHistorico(nomePrimeiraFase);
     }
 
-
     // =========================================================
     // RETORNAR PARA A CENA ANTERIOR
     // =========================================================
@@ -123,7 +101,6 @@ public class GerenciadorDeMenus : MonoBehaviour
     public void RetornarParaCenaAnterior()
     {
         Time.timeScale = 1f;
-
 
         if (!string.IsNullOrEmpty(nomeCenaAnterior))
         {
@@ -142,7 +119,6 @@ public class GerenciadorDeMenus : MonoBehaviour
         }
     }
 
-
     // =========================================================
     // BOTÃO MENU INICIAL
     // =========================================================
@@ -152,31 +128,21 @@ public class GerenciadorDeMenus : MonoBehaviour
         CarregarCenaComHistorico(nomeMenuInicial);
     }
 
-
     // =========================================================
     // BOTÃO RETORNAR AO JOGO
     // =========================================================
 
     public void RetornarAoJogo()
     {
-        // Garante que o jogo volte à velocidade normal.
+        // Retoma o tempo normal do jogo.
         Time.timeScale = 1f;
 
-
-        // Verifica se existe uma fase registrada.
-        if (!string.IsNullOrEmpty(ultimaFaseJogada))
+        // Fecha o painel de pausa sem recarregar a cena.
+        if (painelPause != null)
         {
-            // Volta para a última fase que estava sendo jogada.
-            SceneManager.LoadScene(ultimaFaseJogada);
-        }
-        else
-        {
-            // Caso não exista uma fase registrada,
-            // volta para a primeira fase.
-            SceneManager.LoadScene(nomePrimeiraFase);
+            painelPause.SetActive(false);
         }
     }
-
 
     // =========================================================
     // BOTÃO PAUSAR
@@ -184,18 +150,15 @@ public class GerenciadorDeMenus : MonoBehaviour
 
     public void PausarJogo()
     {
-        // Se houver um painel configurado,
-        // mostra o painel.
+        // Mostra o painel de pausa.
         if (painelPause != null)
         {
             painelPause.SetActive(true);
         }
 
-
         // Pausa o jogo.
         Time.timeScale = 0f;
     }
-
 
     // =========================================================
     // BOTÃO SAIR
@@ -205,10 +168,8 @@ public class GerenciadorDeMenus : MonoBehaviour
     {
         Debug.Log("O jogador clicou em SAIR.");
 
-        // Fecha o jogo quando estiver em uma versão executável.
         Application.Quit();
     }
-
 
     // =========================================================
     // MÉTODO AUXILIAR PARA TROCAR DE CENA
@@ -219,11 +180,9 @@ public class GerenciadorDeMenus : MonoBehaviour
         // Garante que o jogo esteja rodando normalmente.
         Time.timeScale = 1f;
 
-
         // Guarda a cena atual antes de trocar.
         nomeCenaAnterior =
             SceneManager.GetActiveScene().name;
-
 
         // Carrega a próxima cena.
         SceneManager.LoadScene(nomeDaProximaCena);

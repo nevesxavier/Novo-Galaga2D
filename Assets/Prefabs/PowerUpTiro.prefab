@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 6000678135726789888}
   - component: {fileID: 554858657486324873}
   - component: {fileID: 4189049698605950480}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: PowerUpTiro
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28,8 +28,8 @@ Transform:
   m_GameObject: {fileID: 6697771129752908731}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.26, y: 0.36, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.1, y: 0.1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -83,7 +83,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -2622656659752621339, guid: c4159ddc7587e7a43bd2807c054d93e8, type: 3}
+  m_Sprite: {fileID: -9014548564197108557, guid: 617518709ec36fe48ae0bb8032aa2079, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -132,7 +132,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.31, y: 0.62}
+    oldSize: {x: 15.09, y: 10.06}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -153,7 +153,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PowerUp
   tipo: 1
+  efeitoDeVida: 1
   quantidadeDeVida: 1
-  multiplicadorVelocidadeTiro: 2
+  multiplicadorVelocidadeTiro: 3
   duracaoVelocidadeTiro: 5
-  velocidade: 2
+  velocidade: 3
+  limiteEsquerdo: -12

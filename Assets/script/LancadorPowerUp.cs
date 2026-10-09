@@ -1,27 +1,21 @@
+
 using UnityEngine;
 
 /// <summary>
-/// Faz o inimigo lançar Power Ups durante a fase.
-///
-/// O inimigo pode lançar uma quantidade limitada
-/// de Power Ups, com um intervalo configurável.
+/// Faz o inimigo lançar dois tipos de Power Ups durante a fase.
+/// Permite configurar a quantidade máxima e o intervalo.
 /// </summary>
 public class LancadorPowerUp : MonoBehaviour
 {
-    // ============================================================
-    // POWER UP
-    // ============================================================
+    [Header("POWER UPS")]
 
-    [Header("POWER UP")]
-
-    [Tooltip("Prefab do Power Up que será lançado.")]
+    [Tooltip("Primeiro prefab de Power Up.")]
     [SerializeField]
     private GameObject powerUpPrefab;
 
-
-    // ============================================================
-    // QUANTIDADE
-    // ============================================================
+    [Tooltip("Segundo prefab de Power Up.")]
+    [SerializeField]
+    private GameObject segundoPowerUpPrefab;
 
     [Header("QUANTIDADE")]
 
@@ -29,70 +23,64 @@ public class LancadorPowerUp : MonoBehaviour
     [SerializeField]
     private int quantidadeMaxima = 3;
 
-
-    // ============================================================
-    // TEMPO
-    // ============================================================
-
     [Header("TEMPO")]
 
-    [Tooltip("Tempo que o inimigo espera antes do primeiro lançamento.")]
+    [Tooltip("Tempo antes do primeiro lançamento.")]
     [SerializeField]
     private float tempoParaPrimeiroLancamento = 2f;
 
-    [Tooltip("Intervalo entre cada lançamento.")]
+    [Tooltip("Intervalo entre os lançamentos.")]
     [SerializeField]
     private float intervaloEntreLancamentos = 5f;
 
-
-    // ============================================================
-    // POSIÇÃO DO LANÇAMENTO
-    // ============================================================
-
     [Header("POSIÇÃO DO LANÇAMENTO")]
 
-    [Tooltip("Deslocamento horizontal do ponto onde o Power Up nasce.")]
+    [Tooltip("Deslocamento horizontal do lançamento.")]
     [SerializeField]
     private float deslocamentoX = 0f;
 
-    [Tooltip("Deslocamento vertical do ponto onde o Power Up nasce.")]
+    [Tooltip("Deslocamento vertical do lançamento.")]
     [SerializeField]
     private float deslocamentoY = -0.5f;
 
-
-    // ============================================================
-    // CONTROLE INTERNO
-    // ============================================================
-
-    // Quantos Power Ups já foram lançados.
+    // Quantidade de Power Ups já lançados.
     private int quantidadeLancada = 0;
 
-
-    // ============================================================
-    // INÍCIO
-    // ============================================================
+    // Alterna entre os dois prefabs.
+    private bool usarSegundoPrefab = false;
 
     private void Start()
     {
-        // Verifica se existe um prefab configurado.
-        if (powerUpPrefab == null)
+        if (powerUpPrefab == null && segundoPowerUpPrefab == null)
         {
             Debug.LogWarning(
-                "LancadorPowerUp: nenhum Power Up foi configurado no inimigo."
+                "LancadorPowerUp: configure pelo menos um prefab no Inspector.",
+                this
             );
-
             return;
         }
 
-
-        // Verifica se a quantidade é válida.
         if (quantidadeMaxima <= 0)
         {
+            Debug.LogWarning(
+                "LancadorPowerUp: a quantidade máxima deve ser maior que zero.",
+                this
+            );
             return;
         }
 
+        if (intervaloEntreLancamentos <= 0f)
+        {
+            Debug.LogWarning(
+                "LancadorPowerUp: o intervalo deve ser maior que zero.",
+                this
+            );
+            return;
+        }
 
-        // Começa a rotina de lançamento.
+        tempoParaPrimeiroLancamento =
+            Mathf.Max(0f, tempoParaPrimeiroLancamento);
+
         InvokeRepeating(
             nameof(LancarPowerUp),
             tempoParaPrimeiroLancamento,
@@ -100,65 +88,96 @@ public class LancadorPowerUp : MonoBehaviour
         );
     }
 
-
-    // ============================================================
-    // LANÇAR POWER UP
-    // ============================================================
-
     private void LancarPowerUp()
     {
-        // Verifica se já atingiu a quantidade máxima.
-        if (quantidadeLancada >= quantidadeMaxima)
+        if (!isActiveAndEnabled)
         {
-            // Para de chamar a função.
-            CancelInvoke(
-                nameof(LancarPowerUp)
-            );
-
+            CancelInvoke(nameof(LancarPowerUp));
             return;
         }
 
+        if (quantidadeLancada >= quantidadeMaxima)
+        {
+            CancelInvoke(nameof(LancarPowerUp));
+            return;
+        }
 
-        // Calcula a posição onde o Power Up vai nascer.
-        Vector3 posicaoLancamento =
-            transform.position +
-            new Vector3(
-                deslocamentoX,
-                deslocamentoY,
-                0f
+        GameObject prefabEscolhido = EscolherPrefab();
+
+        if (prefabEscolhido == null)
+        {
+            Debug.LogWarning(
+                "LancadorPowerUp: não há um prefab válido para lançar.",
+                this
             );
+            CancelInvoke(nameof(LancarPowerUp));
+            return;
+        }
 
+        Vector3 posicaoLancamento = transform.position +
+            new Vector3(deslocamentoX, deslocamentoY, 0f);
 
-        // Cria o Power Up na cena.
-        Instantiate(
-            powerUpPrefab,
+        GameObject novoPowerUp = Instantiate(
+            prefabEscolhido,
             posicaoLancamento,
             Quaternion.identity
         );
 
+        if (novoPowerUp == null)
+        {
+            Debug.LogWarning(
+                "LancadorPowerUp: não foi possível criar o Power Up.",
+                this
+            );
+            return;
+        }
 
-        // Conta o Power Up lançado.
         quantidadeLancada++;
 
-
         Debug.Log(
-            "Power Up lançado pelo inimigo! " +
-            quantidadeLancada +
-            "/" +
-            quantidadeMaxima
+            "Power Up lançado! " +
+            quantidadeLancada + "/" + quantidadeMaxima,
+            this
         );
+
+        if (quantidadeLancada >= quantidadeMaxima)
+        {
+            CancelInvoke(nameof(LancarPowerUp));
+        }
     }
 
+    private GameObject EscolherPrefab()
+    {
+        GameObject prefabEscolhido;
 
-    // ============================================================
-    // SEGURANÇA
-    // ============================================================
+        // Alterna entre os prefabs quando ambos estão configurados.
+        if (powerUpPrefab != null && segundoPowerUpPrefab != null)
+        {
+            prefabEscolhido = usarSegundoPrefab
+                ? segundoPowerUpPrefab
+                : powerUpPrefab;
+
+            usarSegundoPrefab = !usarSegundoPrefab;
+        }
+        else
+        {
+            // Se apenas um estiver configurado, usa esse prefab.
+            prefabEscolhido = powerUpPrefab != null
+                ? powerUpPrefab
+                : segundoPowerUpPrefab;
+        }
+
+        return prefabEscolhido;
+    }
+
+    private void OnDisable()
+    {
+        CancelInvoke(nameof(LancarPowerUp));
+    }
 
     private void OnDestroy()
     {
-        // Cancela o lançamento caso o inimigo seja destruído.
-        CancelInvoke(
-            nameof(LancarPowerUp)
-        );
+        CancelInvoke(nameof(LancarPowerUp));
     }
 }
+

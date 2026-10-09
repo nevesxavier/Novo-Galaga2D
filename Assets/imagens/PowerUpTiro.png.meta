@@ -1,0 +1,1055 @@
+fileFormatVersion: 2
+guid: 617518709ec36fe48ae0bb8032aa2079
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -9014548564197108557
+    second: PowerUpTiro_0
+  - first:
+      213: 2665670904060427716
+    second: PowerUpTiro_1
+  - first:
+      213: -8243628616293099184
+    second: PowerUpTiro_2
+  - first:
+      213: 4101108740535552870
+    second: PowerUpTiro_3
+  - first:
+      213: -4088629365849453035
+    second: PowerUpTiro_4
+  - first:
+      213: -3573510614557163134
+    second: PowerUpTiro_5
+  - first:
+      213: 8959411829528573107
+    second: PowerUpTiro_6
+  - first:
+      213: 1350854631611727903
+    second: PowerUpTiro_7
+  - first:
+      213: 1072474465036972219
+    second: PowerUpTiro_8
+  - first:
+      213: 1272404147584665183
+    second: PowerUpTiro_9
+  - first:
+      213: -4348519968070612689
+    second: PowerUpTiro_10
+  - first:
+      213: 7544612554504101868
+    second: PowerUpTiro_11
+  - first:
+      213: -3634809906277578939
+    second: PowerUpTiro_12
+  - first:
+      213: 3217977475011148597
+    second: PowerUpTiro_13
+  - first:
+      213: 9006691919567202603
+    second: PowerUpTiro_14
+  - first:
+      213: 3622870073937449806
+    second: PowerUpTiro_15
+  - first:
+      213: 6849916670831093508
+    second: PowerUpTiro_16
+  - first:
+      213: 7063391301565966049
+    second: PowerUpTiro_17
+  - first:
+      213: 5252304845128070516
+    second: PowerUpTiro_18
+  - first:
+      213: -9193187104124722981
+    second: PowerUpTiro_19
+  - first:
+      213: -9107986912552937472
+    second: PowerUpTiro_20
+  - first:
+      213: 3305799521404504009
+    second: PowerUpTiro_21
+  - first:
+      213: -6584008730123984137
+    second: PowerUpTiro_22
+  - first:
+      213: 8111817537995827851
+    second: PowerUpTiro_23
+  - first:
+      213: -8131485197898747446
+    second: PowerUpTiro_24
+  - first:
+      213: -1804909661471381997
+    second: PowerUpTiro_25
+  - first:
+      213: 3191089235937156820
+    second: PowerUpTiro_26
+  - first:
+      213: -1839132865829177250
+    second: PowerUpTiro_27
+  - first:
+      213: -3967036381755510631
+    second: PowerUpTiro_28
+  - first:
+      213: -4315464023442765342
+    second: PowerUpTiro_29
+  - first:
+      213: -98593486034242150
+    second: PowerUpTiro_30
+  - first:
+      213: -3716131482787337932
+    second: PowerUpTiro_31
+  - first:
+      213: 300583628707143758
+    second: PowerUpTiro_32
+  - first:
+      213: -7206231442356707355
+    second: PowerUpTiro_33
+  - first:
+      213: -6902596557349808593
+    second: PowerUpTiro_34
+  - first:
+      213: -2695338851070996779
+    second: PowerUpTiro_35
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PowerUpTiro_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1509
+        height: 1006
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b4168c87d3e5e280800000000000000
+      internalID: -9014548564197108557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PowerUpTiro_1
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 939
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4cdbd9c509d5ef420800000000000000
+      internalID: 2665670904060427716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PowerUpTiro_2
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 917
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 059da99337fb89d80800000000000000
+      internalID: -8243628616293099184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PowerUpTiro_3
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 897
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66b0fd0cba01ae830800000000000000
+      internalID: 4101108740535552870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PowerUpTiro_4
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 897
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51e005611454247c0800000000000000
+      internalID: -4088629365849453035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PowerUpTiro_5
+      rect:
+        serializedVersion: 2
+        x: 382
+        y: 895
+        width: 35
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2818b328707586ec0800000000000000
+      internalID: -3573510614557163134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PowerUpTiro_6
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 733
+        width: 119
+        height: 147
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b4bb770799365c70800000000000000
+      internalID: 8959411829528573107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PowerUpTiro_7
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 859
+        width: 17
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f10886c51233fb210800000000000000
+      internalID: 1350854631611727903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PowerUpTiro_8
+      rect:
+        serializedVersion: 2
+        x: 1072
+        y: 868
+        width: 7
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb0b43ff7d132ee00800000000000000
+      internalID: 1072474465036972219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PowerUpTiro_9
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 759
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f56848ba4dc78a110800000000000000
+      internalID: 1272404147584665183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PowerUpTiro_10
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 759
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f294574e024f6a3c0800000000000000
+      internalID: -4348519968070612689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PowerUpTiro_11
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 663
+        width: 7
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cef5b2f2529d3b860800000000000000
+      internalID: 7544612554504101868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PowerUpTiro_12
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 677
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5470146f5af8e8dc0800000000000000
+      internalID: -3634809906277578939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PowerUpTiro_13
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 673
+        width: 7
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53b7f35c67d88ac20800000000000000
+      internalID: 3217977475011148597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PowerUpTiro_14
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 655
+        width: 69
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b292f23d4923efc70800000000000000
+      internalID: 9006691919567202603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PowerUpTiro_15
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 620
+        width: 9
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e435f603325074230800000000000000
+      internalID: 3622870073937449806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PowerUpTiro_16
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 623
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 407e9e17beacf0f50800000000000000
+      internalID: 6849916670831093508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PowerUpTiro_17
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 595
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e66c6f17f4360260800000000000000
+      internalID: 7063391301565966049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PowerUpTiro_18
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 598
+        width: 9
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 475fbe1cd6fe3e840800000000000000
+      internalID: 5252304845128070516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PowerUpTiro_19
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 592
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd0a1f0590d3b6080800000000000000
+      internalID: -9193187104124722981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PowerUpTiro_20
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 558
+        width: 9
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0081062c82ee99180800000000000000
+      internalID: -9107986912552937472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PowerUpTiro_21
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 559
+        width: 9
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c7c8fb562f80ed20800000000000000
+      internalID: 3305799521404504009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PowerUpTiro_22
+      rect:
+        serializedVersion: 2
+        x: 1296
+        y: 567
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f2a3ea81f6e0a4a0800000000000000
+      internalID: -6584008730123984137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PowerUpTiro_23
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 545
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8a66039217f29070800000000000000
+      internalID: 8111817537995827851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PowerUpTiro_24
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 528
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac1f5e28b49272f80800000000000000
+      internalID: -8131485197898747446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PowerUpTiro_25
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 511
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 316e358c93ca3f6e0800000000000000
+      internalID: -1804909661471381997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PowerUpTiro_26
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 486
+        width: 20
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4de5b92c0c6094c20800000000000000
+      internalID: 3191089235937156820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PowerUpTiro_27
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 462
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e58718517661a76e0800000000000000
+      internalID: -1839132865829177250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PowerUpTiro_28
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 341
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9907966dd6142f8c0800000000000000
+      internalID: -3967036381755510631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PowerUpTiro_29
+      rect:
+        serializedVersion: 2
+        x: 1246
+        y: 189
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e947b1c5546c14c0800000000000000
+      internalID: -4315464023442765342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PowerUpTiro_30
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 127
+        width: 15
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a95f2cf2fb9b1aef0800000000000000
+      internalID: -98593486034242150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PowerUpTiro_31
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 105
+        width: 11
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 439a0d5fa16ad6cc0800000000000000
+      internalID: -3716131482787337932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PowerUpTiro_32
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 111
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e40236eb733eb2400800000000000000
+      internalID: 300583628707143758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PowerUpTiro_33
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 68
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5efd315fea25efb90800000000000000
+      internalID: -7206231442356707355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PowerUpTiro_34
+      rect:
+        serializedVersion: 2
+        x: 1064
+        y: 70
+        width: 7
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f26945ba00d0530a0800000000000000
+      internalID: -6902596557349808593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PowerUpTiro_35
+      rect:
+        serializedVersion: 2
+        x: 1074
+        y: 67
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5de8a90789b389ad0800000000000000
+      internalID: -2695338851070996779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      PowerUpTiro_0: -9014548564197108557
+      PowerUpTiro_1: 2665670904060427716
+      PowerUpTiro_10: -4348519968070612689
+      PowerUpTiro_11: 7544612554504101868
+      PowerUpTiro_12: -3634809906277578939
+      PowerUpTiro_13: 3217977475011148597
+      PowerUpTiro_14: 9006691919567202603
+      PowerUpTiro_15: 3622870073937449806
+      PowerUpTiro_16: 6849916670831093508
+      PowerUpTiro_17: 7063391301565966049
+      PowerUpTiro_18: 5252304845128070516
+      PowerUpTiro_19: -9193187104124722981
+      PowerUpTiro_2: -8243628616293099184
+      PowerUpTiro_20: -9107986912552937472
+      PowerUpTiro_21: 3305799521404504009
+      PowerUpTiro_22: -6584008730123984137
+      PowerUpTiro_23: 8111817537995827851
+      PowerUpTiro_24: -8131485197898747446
+      PowerUpTiro_25: -1804909661471381997
+      PowerUpTiro_26: 3191089235937156820
+      PowerUpTiro_27: -1839132865829177250
+      PowerUpTiro_28: -3967036381755510631
+      PowerUpTiro_29: -4315464023442765342
+      PowerUpTiro_3: 4101108740535552870
+      PowerUpTiro_30: -98593486034242150
+      PowerUpTiro_31: -3716131482787337932
+      PowerUpTiro_32: 300583628707143758
+      PowerUpTiro_33: -7206231442356707355
+      PowerUpTiro_34: -6902596557349808593
+      PowerUpTiro_35: -2695338851070996779
+      PowerUpTiro_4: -4088629365849453035
+      PowerUpTiro_5: -3573510614557163134
+      PowerUpTiro_6: 8959411829528573107
+      PowerUpTiro_7: 1350854631611727903
+      PowerUpTiro_8: 1072474465036972219
+      PowerUpTiro_9: 1272404147584665183
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

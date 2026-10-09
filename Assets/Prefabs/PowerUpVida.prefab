@@ -153,6 +153,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PowerUp
   tipo: 0
+  efeitoDeVida: 1
   quantidadeDeVida: 1
   multiplicadorVelocidadeTiro: 2
   duracaoVelocidadeTiro: 5
